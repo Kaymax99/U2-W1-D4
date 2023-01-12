@@ -1,0 +1,220 @@
+/* GENERAL */
+html {
+  font-family: "Indie Flower", cursive;
+  background-color: #666666;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+p {
+  font-size: 2em;
+}
+
+/* MAIN */
+#postItContainer {
+  margin: 7em 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2.5em;
+  align-content: center;
+}
+
+.postIt {
+  height: 17vw;
+  width: 21vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 8px 8px 7px -2px rgba(0, 0, 0, 0.45);
+  box-shadow: 8px 8px 7px -2px rgba(0, 0, 0, 0.45);
+  transition: transform 0.5s;
+}
+
+/* POST IT */
+.yellow {
+  background: #f5f5c3;
+  background: -moz-linear-gradient(top, #f5f5c3 0%, #f5f5c3 50%, #bdbda3 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #f5f5c3 0%,
+    #f5f5c3 50%,
+    #bdbda3 100%
+  );
+  background: linear-gradient(to bottom, #f5f5c3 0%, #f5f5c3 50%, #bdbda3 100%);
+}
+
+.green {
+  background: #c8f8ca;
+  background: -moz-linear-gradient(top, #c8f8ca 0%, #c8f8ca 50%, #9eb5a1 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #c8f8ca 0%,
+    #c8f8ca 50%,
+    #9eb5a1 100%
+  );
+  background: linear-gradient(to bottom, #c8f8ca 0%, #c8f8ca 50%, #9eb5a1 100%);
+}
+
+.purple {
+  background: #c6c6f1;
+  background: -moz-linear-gradient(top, #c6c6f1 0%, #c6c6f1 50%, #8b8c9b 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #c6c6f1 0%,
+    #c6c6f1 50%,
+    #8b8c9b 100%
+  );
+  background: linear-gradient(to bottom, #c6c6f1 0%, #c6c6f1 50%, #8b8c9b 100%);
+}
+
+#postIt1 {
+  transform: rotate(-5deg);
+  animation: attachPostIt1 1.5s ease-out;
+}
+#postIt2 {
+  transform: rotate(3deg);
+  animation: attachPostIt2 2s ease-out;
+}
+#postIt3 {
+  transform: rotate(-5deg);
+  animation: attachPostIt3 3s ease-out;
+}
+#postIt4 {
+  transform: rotate(10deg);
+  animation: attachPostIt4 4s ease-out;
+}
+#postIt5 {
+  transform: rotate(-5deg);
+  animation: attachPostIt5 4s ease-out;
+}
+#postIt6 {
+  transform: rotate(-7deg);
+  animation: attachPostIt6 5s ease-out;
+}
+#postIt7 {
+  transform: rotate(-3deg);
+  animation: attachPostIt7 6s ease-out;
+}
+#postIt8 {
+  transform: rotate(4deg);
+  animation: attachPostIt8 7s ease-out;
+}
+
+#postIt1:hover,
+#postIt2:hover,
+#postIt3:hover,
+#postIt4:hover,
+#postIt5:hover,
+#postIt6:hover,
+#postIt7:hover,
+#postIt8:hover {
+  transform: scale(1.2);
+  z-index: 1;
+  -webkit-box-shadow: 15px 15px 7px -2px rgba(0, 0, 0, 0.7);
+  box-shadow: 15px 15px 7px -2px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes attachPostIt1 {
+  0% {
+    transform: translate(-2000px);
+  }
+  50% {
+    transform: translate(-1000px);
+  }
+  90% {
+    transform: translate(-10px);
+  }
+  100% {
+    transform: translate(0px);
+    transform: rotate(-5deg);
+  }
+}
+@keyframes attachPostIt2 {
+  0% {
+    transform: translate(-3000px);
+  }
+  50% {
+    transform: translate(-2000px);
+  }
+  100% {
+    transform: translate(0px);
+    transform: rotate(3deg);
+  }
+}
+@keyframes attachPostIt3 {
+  0% {
+    transform: translate(-3000px);
+  }
+  50% {
+    transform: translate(-3000px);
+  }
+  100% {
+    transform: translate(0px);
+    transform: rotate(-5deg);
+  }
+}
+@keyframes attachPostIt4 {
+  0% {
+    transform: translate(-4000px);
+  }
+  50% {
+    transform: translate(-4000px);
+  }
+  100% {
+    transform: translate(0px);
+    transform: rotate(10deg);
+  }
+}
+@keyframes attachPostIt5 {
+  0% {
+    transform: translate(-2000px);
+  }
+  70% {
+    transform: translate(-2000px);
+  }
+  100% {
+    transform: translate(0px);
+    transform: rotate(-5deg);
+  }
+}
+@keyframes attachPostIt6 {
+  0% {
+    transform: translate(-3000px);
+  }
+  70% {
+    transform: translate(-3000px);
+  }
+  100% {
+    transform: translate(0px);
+    transform: rotate(-7deg);
+  }
+}
+@keyframes attachPostIt7 {
+  0% {
+    transform: translate(-3000px);
+  }
+  70% {
+    transform: translate(-3000px);
+  }
+  100% {
+    transform: translate(0px);
+    transform: rotate(-3deg);
+  }
+}
+@keyframes attachPostIt8 {
+  0% {
+    transform: translate(-4000px);
+  }
+  70% {
+    transform: translate(-4000px);
+  }
+  100% {
+    transform: translate(0px);
+    transform: rotate(4deg);
+  }
+}
