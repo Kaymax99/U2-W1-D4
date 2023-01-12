@@ -38,16 +38,17 @@ i {
   width: 150px;
 }
 
-#alternative1 {
+.parole i:nth-child(1) {
   opacity: 0%;
   animation: slotmachine 5s 1.5s ease infinite;
 }
 
-#alternative2 {
+.parole i:nth-child(2) {
   opacity: 0%;
   animation: slotmachine 5s 3s ease infinite;
 }
-#alternative3 {
+
+.parole i:nth-child(3) {
   opacity: 0%;
   animation: slotmachine 5s 5s ease infinite;
 }
